@@ -1,0 +1,199 @@
+
+#feedback {
+
+    #extraImg {
+
+        display: none;
+
+    }
+
+    .formTitle {
+
+        color: #fa6d56;
+        font-size: 3em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        .extraTxtForLargeScreen {
+
+            display: none;
+
+        }
+
+    }
+
+    form {
+
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.80);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        height: 80vh;
+        align-items: center;
+
+        .user_detail {
+
+            background-color: rgba(0, 0, 0, 0.80);
+            border-radius: 6px;
+            width: 80%;
+            height: 40px;
+            border: none;
+            padding: 10px;
+            color: #fa6d56;
+            font-size: 15px;
+
+            &::placeholder {
+    
+                color: #fbb997;
+                font-size: 15px;
+    
+            }
+
+            &:focus {
+
+                background-color: rgba(0, 0, 0, 0.90);
+                outline: none;
+
+            }
+
+        }
+        
+        textarea {
+
+            background-color: rgba(0, 0, 0, 0.80);
+            border-radius: 6px;
+            color: #fa6d56;
+            padding: 8px;
+            border: none;
+            font-size: 15px;
+            width: 80%;
+            resize: none;
+
+            &::placeholder {
+
+                color: #fbb997;
+                font-size: 15px;
+    
+            }
+
+            &:focus {
+
+                background-color: rgba(0, 0, 0, 0.90);
+                outline: none;
+
+            }
+
+        }
+
+        #feedbackBtn {
+
+            cursor: pointer;
+            color: black;
+            background-color: #fa6d56;
+            border-radius: 6px;
+            border: none;
+            font-size: 20px;
+            padding: 8px;
+            width: 80%;
+            margin-bottom: 20px;
+            transition: 0.7s;
+
+            &:hover {
+
+                background-color: #fbb997;
+
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #feedback {
+
+        .formTitle {
+
+            .extraTxtForLargeScreen {
+
+                display: inline;
+
+            }
+
+        }
+
+        form {
+
+            margin: 30px;
+
+            .user_detail {
+
+                padding: 20px;
+                font-size: 24px;
+
+                &::placeholder {
+    
+                    font-size: 24px;
+        
+                }
+
+            }
+
+            textarea {
+
+                padding: 20px;
+                font-size: 24px;
+
+                &::placeholder {
+    
+                    font-size: 24px;
+        
+                }
+
+            }
+
+            #feedbackBtn {
+
+                padding: 20px;
+                font-size: 24px;
+
+            }
+
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width: 1280px) {
+
+    #feedback {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #extraImg {
+
+            display: block;
+            border-left: none;
+            border-right: none;
+            width: 800px;
+            height: 800px;
+
+        }
+
+        form {
+
+            margin: 0;
+            width: 800px;
+            height: 800px;
+
+        }
+
+    }
+
+}

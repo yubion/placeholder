@@ -1,0 +1,148 @@
+
+#welcomeSection {
+
+    padding: 20px;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+
+    #welcomeTextArea {
+
+        .enchanted-Font {
+
+            color: dodgerblue;
+
+        }
+
+        display: flex;
+        flex-direction: column;
+
+        #welcomeHeading {
+
+            font-size: 40px;
+            color: white;
+            margin-bottom: 10px;
+
+        }
+
+        #welcomeParagraph {
+            font-size: 19px;
+            margin-bottom: 20px;
+            color: white;
+
+            br {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+    #welcomeBtnArea {
+
+        display: flex;
+        gap: 0.7em;
+        flex-direction: column;
+
+        .btn {
+
+            width: 100% ;
+            border: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 18px;
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    #welcomeSection {
+
+        #welcomeTextArea {
+
+            #welcomeHeading {
+
+                font-size: 52px;
+                text-align: center;
+
+                br {
+
+                    display: none;
+
+                }
+
+            }
+
+            #welcomeParagraph {
+
+                text-align: center;
+                font-size: 19.8px;
+
+                br {
+
+                    display: block;
+
+                }
+
+            }
+
+        }
+        
+        #welcomeBtnArea {
+
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.2em;
+
+            .btn {
+
+                transition: 0.7s;
+                cursor: pointer;
+
+                &:hover {
+
+                    background-color: rgb(220, 220, 220);
+
+                }
+
+            }
+
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+
+    #welcomeSection {
+
+        padding: 0px;
+
+        #welcomeTextArea {
+
+            #welcomeHeading {
+
+                font-size: 56px;
+                margin-bottom: 10px;
+
+            }
+
+            #welcomeParagraph {
+
+                font-size: 21.4px;
+
+            }
+
+        }
+
+    }
+
+}

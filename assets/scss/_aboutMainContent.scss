@@ -1,0 +1,75 @@
+
+#about-us {
+
+    .row {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+
+            padding: 40px;
+            color: white;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.80);
+            transition: 0.7s;
+
+            &:hover {
+
+                background-color: rgba(0, 0, 0, 0.90);
+
+            }
+
+            .heading {
+
+                font-size: 32px;
+                margin-bottom: 10px;
+
+            }
+
+            .enchanted-Font {
+
+                color: dodgerblue;
+
+            }
+            
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #about-us {
+
+        .row {
+
+            flex-wrap: nowrap;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .box {
+
+                padding: 70px;
+                cursor: default;
+
+                .heading {
+
+                    font-size: 48px;
+
+                }
+
+                .paragraph {
+
+                    font-size: 24px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

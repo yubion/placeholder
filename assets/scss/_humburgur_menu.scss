@@ -1,0 +1,94 @@
+
+#homeBody {
+
+    overflow: hidden;
+
+}
+
+#humburgur_menu_container {
+
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 26px;
+    display: flex;
+    justify-content: end;
+
+    .humburgur_menu_icon {
+
+        color: white;
+        background-color: rgba(0, 0, 0 ,0);
+        border: none;
+        font-size: 36px;
+
+    }
+
+    #close {
+
+        display: none;
+
+    }
+
+}
+
+#humburgur_menu_content {
+    
+    background-color: rgba(0, 0, 0, 0.80);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 74vh;
+
+    #menu-bar {
+
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        .menu-item {
+
+            color: gray;
+            text-decoration: none;
+            font-size: 32px;    
+
+        }
+
+    }
+
+}
+
+#extraContent {
+
+    display: none;
+    background-color: rgba(0, 0, 0, 0.80);
+    height: 20vh;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    #humburgur_menu_content {
+
+        #menu-bar {
+
+            .menu-item {
+
+                font-size: 48px;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #humburgur_menu_container {
+
+        display: none;
+
+    }
+
+}

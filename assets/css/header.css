@@ -1,0 +1,103 @@
+#homeBody {
+  overflow: hidden;
+}
+
+#humburgur_menu_container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 26px;
+  display: flex;
+  justify-content: end;
+}
+#humburgur_menu_container .humburgur_menu_icon {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 36px;
+}
+#humburgur_menu_container #close {
+  display: none;
+}
+
+#humburgur_menu_content {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  height: 74vh;
+}
+#humburgur_menu_content #menu-bar {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+#humburgur_menu_content #menu-bar .menu-item {
+  color: gray;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+#extraContent {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 20vh;
+}
+
+@media only screen and (min-width: 768px) {
+  #humburgur_menu_content #menu-bar .menu-item {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #humburgur_menu_container {
+    display: none;
+  }
+}
+#navbar_container {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #navbar_container {
+    display: block;
+    margin: 30px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #navbar_container #navbar-logo {
+    display: none;
+  }
+  #navbar_container #navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 34px;
+  }
+  #navbar_container #navbar .navbar-item {
+    color: gray;
+    text-decoration: none;
+    transition: 0.7s;
+  }
+  #navbar_container #navbar .navbar-item:hover {
+    color: rgb(200, 200, 200);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #navbar_container {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar_container #navbar-logo {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,73 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-contact h3 {
+  font-size: 24px;
+}
+footer .footer-contact p {
+  margin: 5px 0;
+}
+footer .footer-follow h3 {
+  font-size: 24px;
+}
+footer .footer-follow ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-follow li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-follow li a {
+  color: white;
+}
+footer .footer-info {
+  margin-top: 30px;
+}
+footer .footer-info p {
+  margin: 10px 0;
+}
+footer .footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-info li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-info li a {
+  color: white;
+}
+footer .footer-nav h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+footer .footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    margin: 20px;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

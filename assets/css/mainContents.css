@@ -1,0 +1,240 @@
+#welcomeSection {
+  padding: 20px;
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcomeSection #welcomeTextArea {
+  display: flex;
+  flex-direction: column;
+}
+#welcomeSection #welcomeTextArea .enchanted-Font {
+  color: dodgerblue;
+}
+#welcomeSection #welcomeTextArea #welcomeHeading {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+#welcomeSection #welcomeTextArea #welcomeParagraph {
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: white;
+}
+#welcomeSection #welcomeTextArea #welcomeParagraph br {
+  display: none;
+}
+#welcomeSection #welcomeBtnArea {
+  display: flex;
+  gap: 0.7em;
+  flex-direction: column;
+}
+#welcomeSection #welcomeBtnArea .btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  #welcomeSection #welcomeTextArea #welcomeHeading {
+    font-size: 52px;
+    text-align: center;
+  }
+  #welcomeSection #welcomeTextArea #welcomeHeading br {
+    display: none;
+  }
+  #welcomeSection #welcomeTextArea #welcomeParagraph {
+    text-align: center;
+    font-size: 19.8px;
+  }
+  #welcomeSection #welcomeTextArea #welcomeParagraph br {
+    display: block;
+  }
+  #welcomeSection #welcomeBtnArea {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.2em;
+  }
+  #welcomeSection #welcomeBtnArea .btn {
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  #welcomeSection #welcomeBtnArea .btn:hover {
+    background-color: rgb(220, 220, 220);
+  }
+}
+@media only screen and (min-width: 992px) {
+  #welcomeSection {
+    padding: 0px;
+  }
+  #welcomeSection #welcomeTextArea #welcomeHeading {
+    font-size: 56px;
+    margin-bottom: 10px;
+  }
+  #welcomeSection #welcomeTextArea #welcomeParagraph {
+    font-size: 21.4px;
+  }
+}
+#about-us .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#about-us .row .box {
+  padding: 40px;
+  color: white;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.7s;
+}
+#about-us .row .box:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#about-us .row .box .heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+#about-us .row .box .enchanted-Font {
+  color: dodgerblue;
+}
+
+@media only screen and (min-width: 992px) {
+  #about-us .row {
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #about-us .row .box {
+    padding: 70px;
+    cursor: default;
+  }
+  #about-us .row .box .heading {
+    font-size: 48px;
+  }
+  #about-us .row .box .paragraph {
+    font-size: 24px;
+  }
+}
+#feedback #extraImg {
+  display: none;
+}
+#feedback .formTitle {
+  color: #fa6d56;
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#feedback .formTitle .extraTxtForLargeScreen {
+  display: none;
+}
+#feedback form {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  height: 80vh;
+  align-items: center;
+}
+#feedback form .user_detail {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  color: #fa6d56;
+  font-size: 15px;
+}
+#feedback form .user_detail::placeholder {
+  color: #fbb997;
+  font-size: 15px;
+}
+#feedback form .user_detail:focus {
+  background-color: rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+#feedback form textarea {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  color: #fa6d56;
+  padding: 8px;
+  border: none;
+  font-size: 15px;
+  width: 80%;
+  resize: none;
+}
+#feedback form textarea::placeholder {
+  color: #fbb997;
+  font-size: 15px;
+}
+#feedback form textarea:focus {
+  background-color: rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+#feedback form #feedbackBtn {
+  cursor: pointer;
+  color: black;
+  background-color: #fa6d56;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+#feedback form #feedbackBtn:hover {
+  background-color: #fbb997;
+}
+
+@media only screen and (min-width: 768px) {
+  #feedback .formTitle .extraTxtForLargeScreen {
+    display: inline;
+  }
+  #feedback form {
+    margin: 30px;
+  }
+  #feedback form .user_detail {
+    padding: 20px;
+    font-size: 24px;
+  }
+  #feedback form .user_detail::placeholder {
+    font-size: 24px;
+  }
+  #feedback form textarea {
+    padding: 20px;
+    font-size: 24px;
+  }
+  #feedback form textarea::placeholder {
+    font-size: 24px;
+  }
+  #feedback form #feedbackBtn {
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #feedback #extraImg {
+    display: block;
+    border-left: none;
+    border-right: none;
+    width: 800px;
+    height: 800px;
+  }
+  #feedback form {
+    margin: 0;
+    width: 800px;
+    height: 800px;
+  }
+}
+
+/*# sourceMappingURL=mainContents.css.map */
